@@ -107,7 +107,7 @@ nav a {
 ///
 #coocoon {
     h1 {
-        background-image: url("./images/coocoon_logo@2x.png");
+        background-image: url("/dist/images/coocoon_logo@2x.png");
         background-size: contain;
         background-position: center center;
         background-repeat: no-repeat;
@@ -228,7 +228,7 @@ section#navigation h3.logo {
     transform: scale(0.7);
     width: 250px;
     height: 70px;
-    background-image: url("./images/coocoon_logo@2x.png");
+    background-image: url("/dist/images/coocoon_logo@2x.png");
     background-size: contain;
     background-repeat: no-repeat;
     text-indent: -9000px;
