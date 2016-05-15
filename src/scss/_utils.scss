@@ -1,0 +1,51 @@
+$primary_green: #4AD9D9;
+$secondary_green: #31C0C0;
+$hero_green: #41C5C5;
+$primary_black: #4A4A4A;
+$black: #000000;
+$primary_white: #FFFFFF;
+$accent_red: #F75347;
+
+$xs-screen: 480px;
+$sm-screen: 768px;
+$md-screen: 992px;
+$lg-screen: 1200px;
+
+@mixin box-sizing($box-model) {
+  box-sizing: $box-model;
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  background-clip: padding-box;
+}
+
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin abs-pos($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  position: absolute;
+}
+
+///@include breakpoint(large) { styles... }
+@mixin breakpoint($point) {
+  @if $point == large {
+    @media (min-width: $lg-screen) { @content; }
+  }
+  @else if $point == medium {
+    @media (min-width: $md-screen) { @content; }
+  }
+  @else if $point == small {
+    @media (min-width: $sm-screen)  { @content; }
+  }
+  @else if $point == xsmall {
+    @media (min-width: $xs-screen)  { @content; }
+  }
+}

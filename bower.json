@@ -1,0 +1,21 @@
+{
+  "name": "coocoon.co",
+  "authors": [
+    "vizFlux <viz.flux@gmail.com>"
+  ],
+  "description": "CooCoon landing page.",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "coocoon"
+  ],
+  "license": "MIT",
+  "homepage": "coocoon.co",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
