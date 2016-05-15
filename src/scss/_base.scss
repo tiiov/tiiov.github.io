@@ -4,17 +4,12 @@
     @include box-sizing(border-box);
 }
 html {
-    // height: 100%;
     padding: 0;
     margin: 0;
     font-size: 14px;
     background-color: $primary_green;
 }
 body {
-    // height: 100%;
-    // overflow: hidden!important;
-    width: 100%;
-    position: fixed;
     background-color: $primary_green;
     padding: 0;
     margin: 0;

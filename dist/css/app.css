@@ -5828,9 +5828,6 @@ html {
   background-color: #4AD9D9; }
 
 body {
-  overflow: hidden !important;
-  width: 100%;
-  position: fixed;
   background-color: #4AD9D9;
   padding: 0;
   margin: 0;
