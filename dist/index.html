@@ -12,55 +12,38 @@
     <title>CooCoon</title>
   </head>
 
-  <body id="coocoon">
-    <div class="container">
-      <nav>
-        <a href="about.html">About</a>
-        <a href="https://medium.com/coocoon-sphere">Blog</a>
-      </nav>
-      <h1>
-        CooCoon
-      </h1>
-      <div class="hero">
-        <img src="./images/hero_typography@2x.png" alt="CooCoon Features" />
+  <body class="home">
+    <div class="container navBar">
+      <div class class="navBar__section">
+        <button type="button" name="button" class="btn navBar__item">
+          <a class="navBar__item" href="about.html">About</a>
+        </button>
+        <button type="button" name="button" class="btn navBar__item">
+          <a class="navBar__item" href="https://medium.com/coocoon-sphere">Blog</a>
+        </button>
       </div>
-      <span class="tagline">
-        Thinking out loud.
-      </span>
-      <!-- <a class="typeform-CTA" href="https://alvis3.typeform.com/to/K3tjIh">Shall we talk?</a> -->
-
-      <a class="typeform-share typeform-CTA" href="https://coocoon.typeform.com/to/K3tjIh" data-mode="1" target="_blank">Shall we talk?</a>
-      <script>
-        (function() {
-            var qs,
-                js,
-                q,
-                s,
-                d = document,
-                gi = d.getElementById,
-                ce = d.createElement,
-                gt = d.getElementsByTagName,
-                id = 'typef_orm',
-                b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
-            if (!gi.call(d, id)) {
-                js = ce.call(d, 'script');
-                js.id = id;
-                js.src = b + 'share.js';
-                q = gt.call(d, 'script')[0];
-                q.parentNode.insertBefore(js, q)
-            }
-            id = id + '_';
-            if (!gi.call(d, id)) {
-                qs = ce.call(d, 'link');
-                qs.rel = 'stylesheet';
-                qs.id = id;
-                qs.href = b + 'share-button.css';
-                s = gt.call(d, 'head')[0];
-                s.appendChild(qs, s)
-            }
-        })()
-      </script>
-      <!-- <img class="acoon" id="wonderCoon" src="./images/aCoon@2x.png" alt="aCoon says Hello World!" /> -->
+      <!-- END navBar__section -->
     </div>
+    <!-- END navBar -->
+
+    <div class="hero container">
+      <div class="hero__item">
+        <img class="heroLogo" src="./images/coocoonLogo-white.png" alt="CooCoon Features" />
+      </div>
+      <div class="hero__item heroBrand">
+        <h1>CooCoon</h1>
+      </div>
+      <div class="hero__item heroTagline">
+        <h1>Sharing great stories</h1>
+      </div>
+      <div class="hero__item">
+        <img class="hero__download" src="./images/appstore.png" alt="CooCoon @ App Store"/>
+      </div>
+      <div class="hero__item">
+        <img class="hero__download" src="./images/playstore.png" alt="CooCoon @ Play Store"/>
+      </div>
+    </div>
+    <!-- END hero -->
+
   </body>
 </html>
