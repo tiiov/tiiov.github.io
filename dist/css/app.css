@@ -5837,6 +5837,21 @@ body {
   background-attachment: fixed; }
   .home footer {
     margin-top: 50px; }
+  .home .footer__item {
+    color: #fff; }
+    .home .footer__item a {
+      position: relative; }
+    .home .footer__item a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      top: 15px;
+      width: 0%;
+      border-bottom: 1px solid #fff;
+      transition: 0.4s; }
+    .home .footer__item a:hover::after {
+      width: 100%; }
 
 h1,
 h2,
@@ -5872,7 +5887,7 @@ a, a:active, a:hover, a:visited {
   text-decoration: none; }
 
 a:active, a:hover {
-  color: #4a4a4a; }
+  color: #fff; }
 
 .navBar {
   display: -ms-flexbox;
@@ -5916,8 +5931,35 @@ a:active, a:hover {
   .about .navBar__item img {
     width: 6%; }
 
+.about .navBar--white {
+  position: relative; }
+  .about .navBar--white::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 20px;
+    width: 0%;
+    border-bottom: 1px solid #fff;
+    transition: 0.4s; }
+  .about .navBar--white:hover::after {
+    width: 100%; }
+
 .navBar__item {
   background: transparent; }
+  .navBar__item a {
+    position: relative; }
+  .navBar__item a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 20px;
+    width: 0%;
+    border-bottom: 1px solid #fff;
+    transition: 0.4s; }
+  .navBar__item a:hover::after {
+    width: 100%; }
 
 .hero {
   display: -ms-flexbox;
@@ -5934,6 +5976,9 @@ a:active, a:hover {
   @media (min-width: 480px) {
     .hero {
       padding-top: 10em; } }
+  @media (min-width: 992px) {
+    .hero {
+      padding-top: 5em; } }
   .hero .heroTagline h1 {
     font-size: 1.618em;
     text-align: center;
@@ -6039,3 +6084,34 @@ footer {
 
 .footerDownload {
   width: 50%; }
+
+.about .footer__item a {
+  color: #4a4a4a;
+  position: relative; }
+
+.about .footer__item a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 20px;
+  width: 0%;
+  border-bottom: 1px solid #4a4a4a;
+  transition: 0.4s; }
+
+.about .footer__item a:hover::after {
+  width: 100%; }
+
+.privacy__subline,
+.privacy__details {
+  font-size: 16px;
+  color: #4a4a4a; }
+
+.privacy__tagline {
+  font-weight: 500; }
+
+.privacy__subheader {
+  font-weight: 700; }
+
+.privacy__details span {
+  font-weight: 500; }

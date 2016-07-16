@@ -31,6 +31,29 @@ body {
   footer {
     margin-top: 50px;
   }
+
+  .footer__item {
+    color: $white;
+
+    a {
+      position: relative;
+    }
+
+    a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      top: 15px;
+      width: 0%;
+      border-bottom: 1px solid $white;
+      transition: 0.4s;
+    }
+
+    a:hover::after {
+      width: 100%;
+    }
+  }
 }
 
 h1,
@@ -78,7 +101,7 @@ $a-tags-hover: "a:active, a:hover";
 }
 
 #{$a-tags-hover} {
-  color: $armadillo;
+  color: $white;
 }
 
 .navBar {
@@ -126,10 +149,48 @@ $a-tags-hover: "a:active, a:hover";
       width: 6%;
     }
   }
+
+  .navBar--white {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      top: 20px;
+      width: 0%;
+      border-bottom: 1px solid $white;
+      transition: 0.4s;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
 }
 
 .navBar__item {
   background: transparent;
+
+  a {
+    position: relative;
+  }
+
+  a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 20px;
+    width: 0%;
+    border-bottom: 1px solid $white;
+    transition: 0.4s;
+  }
+
+  a:hover::after {
+    width: 100%;
+  }
 }
 
 .hero {
@@ -143,6 +204,10 @@ $a-tags-hover: "a:active, a:hover";
 
   @media (min-width: 480px) {
     padding-top: 10em;
+  }
+
+  @media (min-width: 992px) {
+    padding-top: 5em;
   }
 
   .heroTagline {
@@ -275,4 +340,46 @@ footer {
 
 .footerDownload {
   width: 50%;
+}
+
+.about .footer__item {
+  a {
+    color: $armadillo;
+    position: relative;
+  }
+
+  a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 20px;
+    width: 0%;
+    border-bottom: 1px solid $armadillo;
+    transition: 0.4s;
+  }
+
+  a:hover::after {
+    width: 100%;
+  }
+}
+
+.privacy__subline,
+.privacy__details {
+  font-size: 16px;
+  color: $armadillo;
+}
+
+.privacy__tagline {
+  font-weight: 500;
+}
+
+.privacy__subheader {
+  font-weight: 700;
+}
+
+.privacy__details {
+  span {
+    font-weight: 500;
+  }
 }
